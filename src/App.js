@@ -6,6 +6,8 @@ import Red from './component/red/Red';
 import Yellow from './component/yellow/Yellow';
 import { store } from './redux/store';
 
+export const APP_NAME = '/traffic-lights';
+
 function App() {
   window.store = store; //для просмотра через консоль
   return (
@@ -13,15 +15,15 @@ function App() {
       <div className='app'>
         <Info />
         <div className='traffic-light'>
-          <Redirect to={'/red'}/>
+          <Redirect to={`${APP_NAME}/red`}/>
           <div className='red-off'>
-            <Route path='/red' render={() => <Red />} />
+            <Route path={`${APP_NAME}/red`} render={() => <Red />} />
           </div>
           <div className='yellow-off'>
-            <Route path='/yellow' render={() => <Yellow />} />
+            <Route path={`${APP_NAME}/yellow`} render={() => <Yellow />} />
           </div>
           <div className='green-off'>
-            <Route path='/green' render={() => <Green />} />
+            <Route path={`${APP_NAME}/green`} render={() => <Green />} />
           </div>
         </div>
       </div>

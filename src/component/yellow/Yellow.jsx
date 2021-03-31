@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { changeColor, changeGo, changeTimer } from '../../redux/reducer'
 import style from './Yellow.module.css'
+import {APP_NAME} from '../../App'
 
 class Yellow extends React.Component {
 
@@ -18,7 +19,7 @@ class Yellow extends React.Component {
 
     setTimeout(()=>{
       clearInterval(time)
-      history.push(`/${this.props.color}`)
+      history.push(`${APP_NAME}/${this.props.color}`)
     }, 3000)
   }
 

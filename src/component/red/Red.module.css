@@ -1,0 +1,28 @@
+@keyframes blinker {
+  0% {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+  }
+  50% {
+    background-color: #a06a66;
+    box-shadow: none;
+  }
+  100% {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+  }
+}
+
+.red {
+  width: 70px;
+  height: 70px;
+  border-radius: 50vh;
+  background-color: red;
+  box-shadow: 0 0 20px red;
+}
+
+.action{
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}

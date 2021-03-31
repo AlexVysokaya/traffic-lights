@@ -1,3 +1,6 @@
+# traffic-loghts
+Запуск проекта по ссылке  https://alexvysokaya.github.io/traffic-lights/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

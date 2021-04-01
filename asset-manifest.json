@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/traffic-lights/static/css/main.25e371ea.chunk.css",
-    "main.js": "/traffic-lights/static/js/main.92821a38.chunk.js",
-    "main.js.map": "/traffic-lights/static/js/main.92821a38.chunk.js.map",
-    "runtime-main.js": "/traffic-lights/static/js/runtime-main.efc6e66f.js",
-    "runtime-main.js.map": "/traffic-lights/static/js/runtime-main.efc6e66f.js.map",
-    "static/js/2.f285c23b.chunk.js": "/traffic-lights/static/js/2.f285c23b.chunk.js",
-    "static/js/2.f285c23b.chunk.js.map": "/traffic-lights/static/js/2.f285c23b.chunk.js.map",
-    "static/js/3.1d3fa776.chunk.js": "/traffic-lights/static/js/3.1d3fa776.chunk.js",
-    "static/js/3.1d3fa776.chunk.js.map": "/traffic-lights/static/js/3.1d3fa776.chunk.js.map",
+    "main.css": "/traffic-lights/static/css/main.ac3935a0.chunk.css",
+    "main.js": "/traffic-lights/static/js/main.cb6d13d1.chunk.js",
+    "main.js.map": "/traffic-lights/static/js/main.cb6d13d1.chunk.js.map",
+    "runtime-main.js": "/traffic-lights/static/js/runtime-main.9f2e8842.js",
+    "runtime-main.js.map": "/traffic-lights/static/js/runtime-main.9f2e8842.js.map",
+    "static/js/2.e7fc6959.chunk.js": "/traffic-lights/static/js/2.e7fc6959.chunk.js",
+    "static/js/2.e7fc6959.chunk.js.map": "/traffic-lights/static/js/2.e7fc6959.chunk.js.map",
+    "static/js/3.01975a79.chunk.js": "/traffic-lights/static/js/3.01975a79.chunk.js",
+    "static/js/3.01975a79.chunk.js.map": "/traffic-lights/static/js/3.01975a79.chunk.js.map",
     "index.html": "/traffic-lights/index.html",
-    "static/css/main.25e371ea.chunk.css.map": "/traffic-lights/static/css/main.25e371ea.chunk.css.map",
-    "static/js/2.f285c23b.chunk.js.LICENSE.txt": "/traffic-lights/static/js/2.f285c23b.chunk.js.LICENSE.txt",
+    "static/css/main.ac3935a0.chunk.css.map": "/traffic-lights/static/css/main.ac3935a0.chunk.css.map",
+    "static/js/2.e7fc6959.chunk.js.LICENSE.txt": "/traffic-lights/static/js/2.e7fc6959.chunk.js.LICENSE.txt",
     "static/media/App.css": "/traffic-lights/static/media/background.6e77170f.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.efc6e66f.js",
-    "static/js/2.f285c23b.chunk.js",
-    "static/css/main.25e371ea.chunk.css",
-    "static/js/main.92821a38.chunk.js"
+    "static/js/runtime-main.9f2e8842.js",
+    "static/js/2.e7fc6959.chunk.js",
+    "static/css/main.ac3935a0.chunk.css",
+    "static/js/main.cb6d13d1.chunk.js"
   ]
 }

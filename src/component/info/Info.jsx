@@ -2,14 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import style from './Info.module.css'
 
-const Info = ({go, time}) => {
+const Info = ({go, count}) => {
   return (
     <div className={style.info}>
       <div className={style.info_text}>
         {go ? <div>GO!</div> : <div>Please, wait!</div>}
       </div>
       <div className={style.info_timer}>
-        {`0:${(time<10) ? 0 : ''}${time}`}
+        {`0:${(count<10) ? 0 : ''}${count}`}
       </div>
     </div>
   )
@@ -18,7 +18,7 @@ const Info = ({go, time}) => {
 let mapStateToProps = (state) => {
   return {
     go: state.reducer.go,
-    time: state.reducer.timer
+    count: state.reducer.count,
   }
 }
 

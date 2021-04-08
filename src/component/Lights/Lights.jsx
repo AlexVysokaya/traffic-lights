@@ -2,27 +2,28 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router'
 import { changeCount, changeGo, changeLight } from '../../redux/reducer'
-import style from './Lights.module.css'
+import style from './Lights.module.scss'
 import { APP_NAME } from '../../App'
 
 class Lights extends React.Component {
 
   componentDidMount() {
-    const { changeGo, changeCount, arrColors, idLight } = this.props
-    const light = arrColors[idLight]
-    changeCount(light.time)
-    changeGo(light.go)
+    const { changeGo, changeCount, arrColors, idLight } = this.props;
+    const light = arrColors[idLight];
+    changeCount(light.time);
+    changeGo(light.go);
   }
 
   componentDidUpdate() {
-    const { count, idLight, arrColors, changeLight, history } = this.props
+    const { count, idLight, arrColors, changeLight, history } = this.props;
     if (count === 0) {
+      // длинну массива
       if (idLight === 3) {
-        history.push(`${APP_NAME}/${arrColors[0].color}`)
-        changeLight(0)
+        history.push(`${APP_NAME}/${arrColors[0].color}`);
+        changeLight(0);
       } else {
-        history.push(`${APP_NAME}/${arrColors[idLight + 1].color}`)
-        changeLight(idLight + 1)
+        history.push(`${APP_NAME}/${arrColors[idLight + 1].color}`);
+        changeLight(idLight + 1);
       }
     }
   }

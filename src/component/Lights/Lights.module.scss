@@ -1,46 +1,29 @@
+@mixin animation ($color) {
+  background-color: $color;
+  box-shadow: 0 0 20px $color;
+}
+
+@mixin noAnimation ($color) {
+  background-color: $color;
+  box-shadow: none;
+}
+
 @keyframes blinkerGreen {
-  0% {
-    background-color: green;
-    box-shadow: 0 0 20px green;
-  }
-  50% {
-    background-color: #7a9d6f;
-    box-shadow: none;
-  }
-  100% {
-    background-color: green;
-    box-shadow: 0 0 20px green;
-  }
+  0% { @include animation(green) }
+  50% { @include noAnimation(#7a9d6f) }
+  100% { @include animation(green) }
 }
 
 @keyframes blinkerYellow {
-  0% {
-    background-color: yellow;
-    box-shadow: 0 0 20px yellow;
-  }
-  50% {
-    background-color: #a5a47e;
-    box-shadow: none;
-  }
-  100% {
-    background-color: yellow;
-    box-shadow: 0 0 20px yellow;
-  }
+  0% { @include animation(yellow) }
+  50% { @include noAnimation(#a5a47e) }
+  100% { @include animation(yellow) }
 }
 
 @keyframes blinkerRed {
-  0% {
-    background-color: red;
-    box-shadow: 0 0 20px red;
-  }
-  50% {
-    background-color: #a06a66;
-    box-shadow: none;
-  }
-  100% {
-    background-color: red;
-    box-shadow: 0 0 20px red;
-  }
+  0% { @include animation(red) }
+  50% { @include noAnimation(#a06a66) }
+  100% { @include animation(red) }
 }
 
 .green, .red, .yellow {
@@ -49,20 +32,11 @@
   border-radius: 50vh;
 }
 
-.green  {
-  background-color: green;
-  box-shadow: 0 0 20px green;
-}
+.green  {@include animation(green)}
 
-.yellow {
-  background-color: yellow;
-  box-shadow: 0 0 20px yellow;
-}
+.yellow {@include animation(yellow)}
 
-.red {
-  background-color: red;
-  box-shadow: 0 0 20px red;
-}
+.red {@include animation(red)}
 
 .action {
   animation-duration: 1s;
